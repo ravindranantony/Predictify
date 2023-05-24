@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Login Form</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="script.js" defer></script>
-  <meta name="google-signin-client_id" content="YOUR_CLIENT_ID">
-  <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <title>Sign In Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Login</h1>
-    <div id="login-button" class="g-signin2" data-onsuccess="onSignIn"></div>
-  </div>
+    <div class="signin-container">
+        <h2>Sign In</h2>
+        <input type="email" placeholder="Email" name="email" required>
+        <input type="password" placeholder="Password" name="psw" required>
+        <button type="submit">Sign In</button>
+        <button class="social-btn google-btn">Sign in with Google</button>
+        <button class="social-btn facebook-btn">Sign in with Facebook</button>
+        <button class="social-btn twitter-btn">Sign in with Twitter</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
 </body>
 </html>
