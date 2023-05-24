@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Next Page</title>
+</head>
+<body>
+  <h1>Welcome!</h1>
+  <p id="email"></p>
+
+  <script>
+    // Retrieve email from query parameter
+    var params = new URLSearchParams(window.location.search);
+    var email = params.get('email');
+
+    // Display the email
+    document.getElementById('email').innerText = 'Email: ' + email;
+  </script>
+</body>
+</html>
